@@ -4,6 +4,11 @@
     <string name="betButtonfinish">Terminé</string>
     <string name="meetingTitle">PSG / OM</string>
 
+    <string name="connexion">Connexion</string>
+    <string name="cooEmail">Email</string>
+    <string name="cooPWD">Mot de passe</string>
+    <string name="beConnected">Se connecter</string>
+
 
 
 

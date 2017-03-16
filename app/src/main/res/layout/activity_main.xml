@@ -13,9 +13,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center"
-        android:text="Connexion"
+        android:layout_marginBottom="40dp"
+        android:text="@string/connexion"
         android:textColor="@color/colorDark"
-        android:textSize="32dp"
+        android:textSize="42sp"
         android:textStyle="bold" />
 
     <EditText
@@ -24,7 +25,8 @@
         android:layout_height="0dp"
         android:layout_weight="0.125"
         android:layout_gravity="center"
-        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:hint="@string/cooEmail"
         android:textStyle="bold" />
     <EditText
         android:id="@+id/etPassword"
@@ -33,7 +35,7 @@
         android:layout_weight="0.125"
         android:layout_gravity="center"
         android:inputType="textPassword"
-        android:hint="Password"
+        android:hint="@string/cooPWD"
         android:textStyle="bold" />
 
     <Button
@@ -47,6 +49,6 @@
         android:background="@drawable/btn_blue_matte"
         android:layout_margin="5dp"
         android:padding="15dp"
-        android:text="Se connecter"/>
+        android:text="@string/beConnected"/>
 
 </LinearLayout>
