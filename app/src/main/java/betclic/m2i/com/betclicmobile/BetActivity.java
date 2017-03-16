@@ -32,7 +32,5 @@ public class BetActivity extends AppCompatActivity {
                 Log.d(TAG, String.format("erreur : %s", t.getMessage()));
             }
         });
-
-
     }
 }
