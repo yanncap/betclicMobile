@@ -5,11 +5,11 @@
         android:id="@+id/betNow"
         android:enabled="true"
         android:title="@string/betButtonNow"
-        android:icon="@drawable/ic_android_black_24dp"/>
+        android:icon="@drawable/nowvecto"/>
     <item
         android:id="@+id/betFinished"
         android:enabled="true"
         android:title="@string/betButtonfinish"
-        android:icon="@drawable/ic_android_black_24dp"/>
+        android:icon="@drawable/webvecto"/>
 
 </menu>
