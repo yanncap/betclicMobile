@@ -2,6 +2,11 @@
     <string name="app_name">BetclicMobile</string>
     <string name="betButtonNow">En cours</string>
     <string name="betButtonfinish">Terminé</string>
+    <string name="meetingTitle">PSG / OM</string>
+
+
+
+
     <string name="loremIpsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
         Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
         when an unknown printer took a galley of type and scrambled it to make a type specimen book.
