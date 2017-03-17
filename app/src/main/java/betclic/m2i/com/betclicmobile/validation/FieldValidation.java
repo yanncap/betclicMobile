@@ -26,7 +26,7 @@ public class FieldValidation {
 
     public final static boolean isValidPassword(Editable text) {
 
-        if(text.length()< 5 ||isEmptyField(text)){
+        if(text.length()< 3 ||isEmptyField(text)){
             return false;
         }else{
             return true;

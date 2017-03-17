@@ -3,6 +3,7 @@ package betclic.m2i.com.betclicmobile.api;
 import java.util.List;
 
 import betclic.m2i.com.betclicmobile.models.Meeting;
+import betclic.m2i.com.betclicmobile.models.UserTransfert;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -17,5 +18,5 @@ public interface BetclicApi {
     public Call<List<Meeting>> getMeetings();
 
     @POST("api/login")
-    public Call<String> login(@Query("email") String email,@Query("password") String password);
+    public Call<UserTransfert> login(@Query("email") String email, @Query("password") String password);
 }

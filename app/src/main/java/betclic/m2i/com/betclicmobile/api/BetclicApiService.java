@@ -24,7 +24,8 @@ public class BetclicApiService {
             }
 
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl("http://localhost:9000/")
+                    .baseUrl("http://10.110.10.40:9000/")
+                    .client(httpClient.build())
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
 
