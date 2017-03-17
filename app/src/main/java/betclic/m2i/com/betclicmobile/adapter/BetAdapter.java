@@ -12,6 +12,7 @@ import java.util.List;
 
 import betclic.m2i.com.betclicmobile.R;
 import betclic.m2i.com.betclicmobile.models.Bet;
+import betclic.m2i.com.betclicmobile.models.DoBet;
 
 /**
  * Created by formation on 17/03/17.
@@ -21,7 +22,8 @@ public class BetAdapter extends RecyclerView.Adapter<BetAdapter.ViewHolder> {
     private List<Bet> bets;
 
 
-    public BetAdapter(ArrayList<Bet> bets) {
+
+    public BetAdapter(List<Bet> bets) {
         this.bets = bets;
     }
 
@@ -35,8 +37,14 @@ public class BetAdapter extends RecyclerView.Adapter<BetAdapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(ViewHolder holder, int position) {
-        holder.itemBetText.setText(bets.get(position).getName());
-        holder.itemBetStatus.setText(bets.get(position).getStatus().toString());
+        Bet b = bets.get(position);
+        holder.itemBetText.setText(b.getName());
+        holder.itemBetStatus.setText(b.getStatus().toString());
+        /*List<DoBet> doBets = new ArrayList<>();
+            for (DoBet db: b.getDoBets()) {
+                doBets.add(db);
+
+            }*/
     }
 
     @Override
