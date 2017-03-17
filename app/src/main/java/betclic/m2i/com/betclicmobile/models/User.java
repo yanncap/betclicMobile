@@ -8,7 +8,7 @@ import java.util.List;
  * Created by formation on 16/03/17.
  */
 
-class User {
+public class User {
     private long id;
     private String email;
     private String password;

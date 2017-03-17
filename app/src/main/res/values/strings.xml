@@ -9,6 +9,11 @@
     <string name="cooPWD">Mot de passe</string>
     <string name="beConnected">Se connecter</string>
 
+    <string name="inscription">Inscription</string>
+    <string name="inscEmail">Email</string>
+    <string name="inscPWD">Mot de passe</string>
+    <string name="ins">S\'inscrir</string>
+
 
     <string name="apropos">À propos</string>
     <string name="aproposTitle1">Betclic cest sûr, simple et ça peut rapporter!</string>
@@ -20,6 +25,15 @@ Que vous soyez novice ou expérimenté, vous apprécierez le site Betclic pour s
     <string name="aproposOffre">Betclic possède une offre de paris sportifs complète. Vous pouvez parier sur lensemble des sports autorisés par lArjel.
         Vous pouvez également miser sur toutes les courses hippiques françaises et sur une sélection des meilleures courses internationales.
         Enfin, Betclic vous propose également l un des logiciels poker les plus fiables du marché. Jouez sur nos tables facile d accès et 100% sécurisées.
+    </string>
+
+
+    <string name="loremIpsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+        Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s,
+        when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+        It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+        It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+        and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </string>
 
     <string name="imgCommentFoot">Footballeur</string>

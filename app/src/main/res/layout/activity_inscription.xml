@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        tools:context="betclic.m2i.com.betclicmobile.Inscription">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Inscription"
+            android:textColor="@color/colorDark"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitre21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" DONNÉES PERSONNELLES"
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/etNom"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.125"
+            android:hint="nom"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPrenom"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.125"
+            android:hint="prénom"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <CalendarView
+            android:id="@+id/cvDate"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.09"
+            android:hint="date de naissance"
+            android:inputType="date"
+            android:textStyle="bold" />
+
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/brB1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="M"
+                    android:gravity="center"
+                    android:checked="true" />
+
+                <RadioButton
+                    android:id="@+id/brB2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                     android:text="Mme" />
+            </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvTitre22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" LIEU DE RÉSIDENCE "
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/etAdresse"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.125"
+            android:hint="adresse"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etVille"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.125"
+            android:hint="ville"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPays"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.125"
+            android:hint="pays"
+            android:inputType="text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitre23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=" DONNÉES DE CONNEXION "
+            android:textColor="@color/colorWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"/>
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.125"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="0.125"
+            android:hint="mot de passe"
+            android:inputType="textPassword"
+            android:textStyle="bold" />
+
+
+        <Button
+            android:id="@+id/bInscription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:background="@drawable/btn_blue_matte"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="S'inscrir"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
