@@ -5,9 +5,18 @@ package betclic.m2i.com.betclicmobile.models;
  */
 
 public class Cote {
+    private long id;
     private String name;
     private double cote;
     private Bet bet;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

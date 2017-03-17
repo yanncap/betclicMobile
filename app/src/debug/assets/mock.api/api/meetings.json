@@ -1,0 +1,45 @@
+[
+  {
+    "name": "paris-marseille",
+    "date": "Jul 7, 2017 2:00:00 AM",
+    "status": "WAIT",
+    "bets": [],
+    "id": 3
+  },
+  {
+    "name": "Rennes-Nantes",
+    "date": "Aug 8, 2017 2:00:00 AM",
+    "status": "WAIT",
+    "bets": [],
+    "id": 4
+  },
+  {
+    "name": "paris-bordeaux",
+    "date": "Aug 9, 2017 2:00:00 AM",
+    "status": "WAIT",
+    "bets": [],
+    "id": 5
+  },
+  {
+    "name": "Nancy-Montpelier",
+    "date": "Aug 10, 2017 2:00:00 AM",
+    "status": "WAIT",
+    "bets": [],
+    "id": 6
+  },
+  {
+    "name": "Monaco-Bordeaux",
+    "date": "Aug 11, 2017 2:00:00 AM",
+    "status": "WAIT",
+    "bets": [],
+    "id": 7
+  },
+  {
+  "name": "Caen-Lorient",
+  "date": "Aug 12, 2017 2:00:00 AM",
+  "status": "WAIT",
+  "bets": [],
+  "id": 8
+  }
+
+]

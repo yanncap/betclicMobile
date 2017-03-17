@@ -1,0 +1,144 @@
+{
+  "name": "paris-marseille",
+  "date": "Jul 7, 2017 2:00:00 AM",
+  "status": "WAIT",
+  "bets": [
+    {
+      "name": "1 N 2 - 90 Minutes",
+      "status": "WAIT",
+      "betType": {
+        "name": "Full Match",
+        "id": 6
+      },
+      "cotes": [
+        {
+          "name": "1",
+          "cote": 1.5,
+          "id": 1
+        },
+        {
+          "name": "N",
+          "cote": 2.3,
+          "id": 2
+        },
+        {
+          "name": "2",
+          "cote": 3.7,
+          "id": 3
+        }
+      ],
+      "doBets": [
+        {
+          "doBetDate": "Jul 7, 2017 2:00:00 AM",
+          "user": {
+            "firstname": "yann",
+            "lastname": "cap",
+            "id": 1
+          },
+          "cote":{
+            "name": "1",
+            "cote": 1.5,
+            "id": 1
+          },
+          "montant": 5.0,
+          "betResult":{
+            "status": "WIN",
+            "montant": 7.5,
+            "id": 1
+          },
+          "id": 1
+        },
+        {
+          "doBetDate": "Jul 7, 2017 2:00:00 AM",
+          "user": {
+            "firstname": "test1",
+            "lastname": "tes1",
+            "id": 2
+          },
+          "cote":{
+            "name": "N",
+            "cote": 2.3,
+            "id": 2
+          },
+          "montant": 10.0,
+          "betResult":{
+            "status": "LOSE",
+            "montant": 0,
+            "id": 2
+          },
+          "id": 2
+        },
+        {
+          "doBetDate": "Jul 7, 2017 2:00:00 AM",
+          "user": {
+            "firstname": "test2",
+            "lastname": "test2",
+            "id": 3
+          },
+          "cote":{
+            "name": "N",
+            "cote": 2.3,
+            "id": 2
+          },
+          "montant": 155.0,
+          "betResult":{
+            "status": "LOSE",
+            "montant": 0,
+            "id": 3
+          },
+          "id": 3
+        },
+        {
+          "doBetDate": "Jul 7, 2017 2:00:00 AM",
+          "user": {
+            "firstname": "test3",
+            "lastname": "test3",
+            "id": 4
+          },
+          "cote":{
+            "name": "2",
+            "cote": 3.7,
+            "id": 3
+          },
+          "montant": 15.0,
+          "betResult":{
+            "status": "LOSE",
+            "montant": 0,
+            "id": 4
+          },
+          "id": 4
+        },
+        {
+          "doBetDate": "Jul 7, 2017 2:00:00 AM",
+          "user": {
+            "firstname": "test4",
+            "lastname": "test4",
+            "id": 5
+          },
+          "cote":{
+            "name": "1",
+            "cote": 1.5,
+            "id": 1
+          },
+          "montant": 20.0,
+          "betResult":{
+            "status": "WIN",
+            "montant": 0,
+            "id": 5
+          },
+          "id": 5
+        }
+      ]
+    },
+    {
+      "name": "1 N 2 - Mi Temps",
+      "status": "WAIT",
+      "betType": {
+        "name": "Mi Match",
+        "id": 7
+      },
+      "cotes": []
+    }
+  ],
+  "id": 3
+}

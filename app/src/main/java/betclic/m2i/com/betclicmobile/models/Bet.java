@@ -7,6 +7,7 @@ import java.util.List;
  */
 
 public class Bet {
+    private long id;
     private String name;
     private Status status;
     private BetType betType;
@@ -18,6 +19,14 @@ public class Bet {
     public Bet(String name, Status status) {
         this.name = name;
         this.status = status;
+    }
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
     }
 
     public String getName() {

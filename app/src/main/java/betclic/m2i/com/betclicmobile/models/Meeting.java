@@ -8,12 +8,19 @@ import java.util.List;
  */
 
 public class Meeting {
+    private long id;
     private String name ;
     private Date date;
     private Status status;
     private List<Bet> bets ;
 
+    public long getId() {
+        return id;
+    }
 
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return name;

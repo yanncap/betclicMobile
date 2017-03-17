@@ -9,6 +9,7 @@ import java.util.List;
  */
 
 class User {
+    private long id;
     private String email;
     private String password;
     private String lastname;
@@ -17,6 +18,14 @@ class User {
     private List<DoBet> doBets;
     private BigDecimal solde;
     private String token;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getEmail() {
         return email;

@@ -7,8 +7,17 @@ import java.math.BigDecimal;
  */
 
 public class BetResult {
+    private long id;
     private StatusResult status;
     private BigDecimal montant;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public StatusResult getStatus() {
         return status;

@@ -1,24 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:orientation="vertical"
-    android:layout_height="match_parent">
+    android:layout_height="100dp"
+    android:weightSum="1"
+    android:id="@+id/layoutMeetings">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:scaleType="centerCrop"
-        android:contentDescription="@string/imgCommentFoot"
-        app:srcCompat="@drawable/foot"/>
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:contentDescription="icon_ball"
+        app:srcCompat="@drawable/ball"
+        android:layout_weight="0.2"
+        android:id="@+id/iconMeeting"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/meetingTitle"
-        android:gravity="center"
-        android:textSize="30sp"
-        android:layout_margin="10dp"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="0.8"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_margin="10dp"
+            android:layout_weight="0.5"
+            android:id="@+id/nameMeeting"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.5"
+            android:id="@+id/dateMeeting" />
+
+    </LinearLayout>
+
+
 
 
 

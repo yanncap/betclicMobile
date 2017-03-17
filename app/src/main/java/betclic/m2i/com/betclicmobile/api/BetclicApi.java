@@ -7,6 +7,8 @@ import betclic.m2i.com.betclicmobile.models.UserTransfert;
 import retrofit2.Call;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
+import retrofit2.http.Part;
+import retrofit2.http.Path;
 import retrofit2.http.Query;
 
 /**
@@ -16,6 +18,9 @@ import retrofit2.http.Query;
 public interface BetclicApi {
     @GET("api/meetings")
     public Call<List<Meeting>> getMeetings();
+
+    @GET("api/meeting/{id}")
+    public Call<Meeting> getMeetingDetail(@Path("id") long id);
 
     @POST("api/login")
     public Call<UserTransfert> login(@Query("email") String email, @Query("password") String password);

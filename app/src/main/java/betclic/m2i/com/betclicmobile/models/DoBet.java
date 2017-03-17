@@ -8,11 +8,20 @@ import java.util.Date;
  */
 
 public class DoBet {
+    private long id;
     private Date doBetDate;
     private User user;
     private Cote cote;
     private BigDecimal montant;
     private BetResult  result;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public Date getDoBetDate() {
         return doBetDate;
