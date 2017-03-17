@@ -1,7 +1,8 @@
 package betclic.m2i.com.betclicmobile;
 
-import android.app.Service;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -10,9 +11,14 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.UnsupportedEncodingException;
+import java.security.NoSuchAlgorithmException;
+
 import betclic.m2i.com.betclicmobile.api.BetclicApi;
 import betclic.m2i.com.betclicmobile.api.BetclicApiService;
 import betclic.m2i.com.betclicmobile.models.UserTransfert;
+import betclic.m2i.com.betclicmobile.utils.StorageService;
+import betclic.m2i.com.betclicmobile.utils.StringEncryption;
 import betclic.m2i.com.betclicmobile.validation.FieldValidation;
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -33,15 +39,23 @@ public class MainActivity extends AppCompatActivity {
     @BindView(R.id.bvId)
     Button bvId;
 
+    String  passwordEncrypt;
+    private Intent intent;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
+        intent = new Intent(MainActivity.this,BetActivity.class);
+        String userToken = StorageService.getUserToken(this);
 
+        if (!userToken.isEmpty()){
+            startActivity(intent);
+        }
     }
-
 
     @OnClick(R.id.bvId)
     public void onClick() {
@@ -57,14 +71,24 @@ public class MainActivity extends AppCompatActivity {
             return;
 
         }
-        Intent intent = new Intent(MainActivity.this,BetActivity.class);
 
-        betclicService.login(etEmail.getText().toString(), etPassword.getText().toString()).enqueue(new Callback<UserTransfert>() {
+        try {
+            passwordEncrypt = StringEncryption.SHA1(etPassword.getText().toString());
+
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+
+        betclicService.login(etEmail.getText().toString(), passwordEncrypt).enqueue(new Callback<UserTransfert>() {
             @Override
             public void onResponse(Call<UserTransfert> call, Response<UserTransfert> response) {
                 if (response.isSuccessful()) {
                     UserTransfert userTransfert = response.body();
                     Log.d("Response", userTransfert.getToken());
+
+                    StorageService.storeUserToken(MainActivity.this, userTransfert.token);
 
                     //TODO :rediriger vers activity paris sportif
                     startActivity(intent);
