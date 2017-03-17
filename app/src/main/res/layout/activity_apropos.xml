@@ -9,10 +9,9 @@ android:paddingRight="@dimen/activity_horizontal_margin"
 android:paddingTop="@dimen/activity_vertical_margin">
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:weightSum="1">
 
@@ -22,9 +21,9 @@ android:paddingTop="@dimen/activity_vertical_margin">
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="À propos"
+                android:text="@string/apropos"
                 android:textColor="@color/colorDark"
-                android:textSize="32dp"
+                android:textSize="32sp"
                 android:textStyle="bold"
                 android:padding="20dp"/>
 
@@ -33,14 +32,37 @@ android:paddingTop="@dimen/activity_vertical_margin">
                 android:layout_height="200dp"
                 android:layout_weight="0.4"
                 android:scaleType="centerCrop"
+                android:contentDescription="@string/imgCommentFoot"
                 android:src="@drawable/foot4"/>
 
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:text="@string/aproposTitle1"
+                />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
                 android:padding="20dp"
-                android:gravity="left"
+                android:gravity="start"
+                android:text="@string/aproposRaporter"
+                />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:gravity="start"
+                android:text="@string/aproposTitle2"
                 />
 
             <TextView
@@ -48,7 +70,8 @@ android:paddingTop="@dimen/activity_vertical_margin">
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:padding="20dp"
-                android:gravity="left"
+                android:gravity="start"
+                android:text="@string/aproposOffre"
                 />
 
 
@@ -56,6 +79,7 @@ android:paddingTop="@dimen/activity_vertical_margin">
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_weight="0.4"
+                android:contentDescription="@string/imgCommentMap"
                 android:scaleType="centerCrop"
                 android:src="@drawable/maps"/>
 

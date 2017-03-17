@@ -10,6 +10,18 @@
     <string name="beConnected">Se connecter</string>
 
 
+    <string name="apropos">À propos</string>
+    <string name="aproposTitle1">Betclic cest sûr, simple et ça peut rapporter!</string>
+    <string name="aproposRaporter">Betclic vous ouvre le monde excitant et passionnant du pari sportif, du turf et du poker.
+Que vous soyez novice ou expérimenté, vous apprécierez le site Betclic pour sa simplicité, sa facilité d\'utilisation et sa convivialité.
+    </string>
+
+    <string name="aproposTitle2">Une offre riche et complète</string>
+    <string name="aproposOffre">Betclic possède une offre de paris sportifs complète. Vous pouvez parier sur lensemble des sports autorisés par lArjel.
+        Vous pouvez également miser sur toutes les courses hippiques françaises et sur une sélection des meilleures courses internationales.
+        Enfin, Betclic vous propose également l un des logiciels poker les plus fiables du marché. Jouez sur nos tables facile d accès et 100% sécurisées.
+    </string>
+
 
 
     <string name="loremIpsum">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -20,4 +32,6 @@
         and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
     </string>
 
+    <string name="imgCommentFoot">Footballeur</string>
+    <string name="imgCommentMap">Carte</string>
 </resources>
