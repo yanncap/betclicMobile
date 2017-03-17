@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick(R.id.bvId)
     public void onClick() {
 
-        BetclicApi betclicService = BetclicApiService.getInstance();
+        BetclicApi betclicService = BetclicApiService.getInstance(this);
 
         if(!FieldValidation.isValidEmail(etEmail.getText())) {
             etEmail.setError("Email invalide");
