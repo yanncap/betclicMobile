@@ -19,6 +19,10 @@ public class User {
     private BigDecimal solde;
     private String token;
 
+    public User(String firstname) {
+        this.firstname = firstname;
+    }
+
     public long getId() {
         return id;
     }

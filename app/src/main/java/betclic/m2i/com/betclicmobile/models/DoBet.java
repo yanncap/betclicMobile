@@ -15,6 +15,12 @@ public class DoBet {
     private BigDecimal montant;
     private BetResult  result;
 
+    public DoBet(User user, BigDecimal montant, BetResult result) {
+        this.user = user;
+        this.montant = montant;
+        this.result = result;
+    }
+
     public long getId() {
         return id;
     }
