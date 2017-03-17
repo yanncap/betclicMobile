@@ -52,9 +52,11 @@ public class MainActivity extends AppCompatActivity {
         intent = new Intent(MainActivity.this,BetActivity.class);
         String userToken = StorageService.getUserToken(this);
 
-        if (!userToken.isEmpty()){
-            startActivity(intent);
-        }
+//        if (!userToken.isEmpty()){
+//            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//            intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
+//            startActivity(intent);
+//        }
     }
 
     @OnClick(R.id.bvId)
@@ -90,6 +92,8 @@ public class MainActivity extends AppCompatActivity {
 
                     StorageService.storeUserToken(MainActivity.this, userTransfert.token);
 
+                    intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                    intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK);
                     //TODO :rediriger vers activity paris sportif
                     startActivity(intent);
 

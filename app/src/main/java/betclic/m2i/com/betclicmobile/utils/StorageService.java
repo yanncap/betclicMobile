@@ -17,9 +17,16 @@ public class StorageService {
         editor.apply();
     }
 
-    public static String getUserToken (Activity activity){
+    public static String getUserToken(Activity activity){
         SharedPreferences sharedPref = activity.getPreferences(Context.MODE_PRIVATE);
         String userToken = sharedPref.getString(USER_TOKEN_KEY,"");
         return userToken;
+    }
+
+    public static void clear(Activity activity){
+        SharedPreferences sharedPref = activity.getPreferences(Context.MODE_PRIVATE);
+        SharedPreferences.Editor edit = sharedPref.edit();
+        edit.clear();
+        edit.commit();
     }
 }
