@@ -18,8 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Apropos" />
-        <activity android:name=".BetActivity"></activity>
+        <activity android:name=".AproposActivity" />
+        <activity android:name=".BetActivity" />
+        <activity android:name=".MeetingActivity" />
     </application>
 
 </manifest>

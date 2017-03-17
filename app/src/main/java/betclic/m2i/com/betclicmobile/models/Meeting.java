@@ -13,6 +13,8 @@ public class Meeting {
     private Status status;
     private List<Bet> bets ;
 
+
+
     public String getName() {
         return name;
     }

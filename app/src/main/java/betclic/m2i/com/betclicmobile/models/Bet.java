@@ -15,6 +15,11 @@ public class Bet {
     private Cote coteWin;
     private List<DoBet> doBets;
 
+    public Bet(String name, Status status) {
+        this.name = name;
+        this.status = status;
+    }
+
     public String getName() {
         return name;
     }

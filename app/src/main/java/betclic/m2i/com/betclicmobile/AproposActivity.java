@@ -11,7 +11,7 @@ import android.widget.TextView;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class Apropos extends AppCompatActivity {
+public class AproposActivity extends AppCompatActivity {
 
     @BindView(R.id.textView1)
     TextView textView1;
