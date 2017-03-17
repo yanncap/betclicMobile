@@ -59,6 +59,12 @@ public class MainActivity extends AppCompatActivity {
 //        }
     }
 
+    @OnClick(R.id.bvInsc)
+    public void onClickInscription() {
+      Intent intentInscription = new Intent(MainActivity.this,Inscription.class);
+      startActivity(intentInscription);
+    }
+
     @OnClick(R.id.bvId)
     public void onClick() {
 
